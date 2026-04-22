@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "african-language-models"
+version = "0.1.0"
+description = "Custom language models for African languages"
+authors = [
+    { name="FNI AI LLM", email="fni@ai.com" }
+]
+license = { text = "MIT" }
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "numpy>=2.4.4",
+    "pandas>=2.0.3",
+    "matplotlib>=3.7.1",
+    "scikit-learn>=1.3.0",
+    "scipy>=1.17.1",
+    "joblib>=1.5.3",
+    "threadpoolctl>=3.6.0"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "black>=23.0.0",
+    "flake8>=6.0.0",
+    "mypy>=1.0.0"
+]
+
+[project.urls]
+Homepage = "https://github.com/fni-ai/llm"
+Repository = "https://github.com/fni-ai/llm"
