@@ -1,0 +1,45 @@
+{
+  "timestamp": "2026-04-22 14:20:30.303707",
+  "messages": [
+    {
+      "role": "user",
+      "text": "hello"
+    },
+    {
+      "role": "bot",
+      "text": "Hi! I am FNI-LLM. Ask me anything."
+    },
+    {
+      "role": "user",
+      "text": "how are you"
+    },
+    {
+      "role": "bot",
+      "text": "I am doing great, training hard!"
+    },
+    {
+      "role": "user",
+      "text": "what are you"
+    },
+    {
+      "role": "bot",
+      "text": "I am FNI-LLM, an AI being built from scratch."
+    },
+    {
+      "role": "user",
+      "text": "help"
+    },
+    {
+      "role": "bot",
+      "text": "Commands: hello, how are you, what are you, history, clear, bye"
+    },
+    {
+      "role": "user",
+      "text": "bye"
+    },
+    {
+      "role": "bot",
+      "text": "Goodbye! Keep learning."
+    }
+  ]
+}
