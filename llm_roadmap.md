@@ -58,16 +58,18 @@ Build a production-ready language model from scratch with continuous testing thr
 - [ ] Install Deep Learning Stack
   - [ ] `pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118`
   - [ ] Verify PyTorch: `python -c "import torch; print(torch.__version__)"`
+  - NOTE: PyTorch installed in Google Colab (no local disk space) - run `!pip install torch` in Colab
 - [ ] Install Jupyter & Notebooks
   - [ ] `pip install jupyter==1.0.0`
   - [ ] `pip install notebook==7.0.0`
+  - NOTE: Jupyter/Notebook run in Google Colab and VS Code built-in notebook support
 - [x] Create requirements.txt: `pip freeze > requirements.txt`
 - [x] Commit dependencies to git
 
 ### Google Colab Setup
 - [x] Create Google account (if needed)
 - [x] Set up Google Drive folder for Colab notebooks
-- [ ] Create first Colab notebook ("FNI_LLM_Training.ipynb")
+- [x] Create first Colab notebook ("FNI_LLM_Training.ipynb") - use Colab directly
 - [ ] Test GPU access in Colab: `!nvidia-smi`
 - [ ] Share Drive with collaborators (if applicable)
 
@@ -78,8 +80,8 @@ Build a production-ready language model from scratch with continuous testing thr
   - [x] Select virtual environment interpreter
   - [x] Verify: `which python` shows venv path
 - [ ] Create `.vscode/settings.json` for project-wide settings
-  - [ ] Python formatting (Black)
-  - [ ] Linting (Pylint/Flake8)
+  - [x] Python formatting (Black)
+  - [x] Linting (Pylint/Flake8)
 - [ ] Configure Jupyter kernel in VS Code
   - [ ] Select kernel from venv
 - [ ] Create launch configurations for debugging
@@ -136,13 +138,13 @@ Build a production-ready language model from scratch with continuous testing thr
 
 - [x] Create test directory structure: `tests/`
 - [x] Write first test (verify environment)
-  - [ ] Test file: `tests/test_environment.py`
-  - [ ] Verify numpy import
-  - [ ] Verify torch import
-  - [ ] Verify GPU availability (if applicable)
-- [ ] Run tests: `python -m pytest tests/`
+  - [x] Test file: `tests/test_environment.py`
+  - [x] Verify numpy import
+  - [x] Verify torch import (Colab only)
+  - [x] Verify GPU availability (Colab only)
+- [x] Run tests: `python -m pytest tests/`
 - [ ] Create CI/CD pipeline plan (GitHub Actions)
-- [ ] Document setup process in `docs/SETUP.md`
+- [x] Document setup process in `docs/SETUP.md`
 
 ---
 
