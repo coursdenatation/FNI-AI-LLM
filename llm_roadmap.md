@@ -151,282 +151,257 @@ Build a production-ready language model from scratch with continuous testing thr
 ## ✅ Phase 1.1: Python Mastery (Weeks 1-8)
 
 ### Core Language Concepts
-- [ ] **Variables & Data Types**
-  - [ ] Create: `src/year1/01_python_basics.py`
-  - [ ] Implement: integers, floats, strings, booleans
-  - [ ] Write: 10+ mini-programs testing each type
-  - [ ] Test: data type conversions
-- [ ] **Control Flow**
-  - [ ] Implement: if/elif/else statements
-  - [ ] Implement: for loops (with different iterables)
-  - [ ] Implement: while loops with break/continue
-  - [ ] Create: 5+ programs using nested control flow
-- [ ] **Functions**
-  - [ ] Create: `src/year1/02_functions.py`
-  - [ ] Implement: function definition & return values
-  - [ ] Implement: default parameters & variable arguments (*args, **kwargs)
-  - [ ] Implement: recursion (factorial, fibonacci)
-  - [ ] Write: 10 reusable functions
-- [ ] **Data Structures**
-  - [ ] Implement: lists, tuples, dictionaries, sets
-  - [ ] Create: `src/year1/03_data_structures.py`
-  - [ ] Practice: list comprehensions & dict comprehensions
-  - [ ] Create: programs manipulating each structure
-- [ ] **Object-Oriented Programming**
-  - [ ] Create: `src/year1/04_oop.py`
-  - [ ] Implement: classes & objects
-  - [ ] Implement: inheritance & polymorphism
-  - [ ] Implement: encapsulation (private/public)
-  - [ ] Create: 3+ class hierarchies
+- [x] **Variables & Data Types**
+  - [x] Create: `src/year1/01_python_basics.py`
+  - [x] Implement: integers, floats, strings, booleans
+  - [x] Write: 10+ mini-programs testing each type
+  - [x] Test: data type conversions
+- [x] **Control Flow**
+  - [x] Implement: if/elif/else statements
+  - [x] Implement: for loops (with different iterables)
+  - [x] Implement: while loops with break/continue
+  - [x] Create: 5+ programs using nested control flow
+- [x] **Functions**
+  - [x] Create: `src/year1/02_functions.py`
+  - [x] Implement: function definition & return values
+  - [x] Implement: default parameters & variable arguments (*args, **kwargs)
+  - [x] Implement: recursion (factorial, fibonacci)
+  - [x] Write: 10 reusable functions
+- [x] **Data Structures**
+  - [x] Implement: lists, tuples, dictionaries, sets
+  - [x] Create: `src/year1/03_data_structures.py`
+  - [x] Practice: list comprehensions & dict comprehensions
+  - [x] Create: programs manipulating each structure
+- [x] **Object-Oriented Programming**
+  - [x] Create: `src/year1/04_oop.py`
+  - [x] Implement: classes & objects
+  - [x] Implement: inheritance & polymorphism
+  - [x] Implement: encapsulation (private/public)
+  - [x] Create: 3+ class hierarchies
 
 ### Validation
 - [ ] Write unit tests for all modules
 - [ ] All tests pass: `pytest tests/year1/ -v`
-- [ ] Code follows PEP 8 style guide
-- [ ] Commit: `git commit -m "[Year1] Complete Python fundamentals"`
+- [x] Code follows PEP 8 style guide
+- [x] Commit: `git commit -m "[Year1] Complete Python fundamentals"`
 
 ## ✅ Phase 1.2: Mathematical Foundations (Weeks 9-16)
 
 ### Linear Algebra
-- [ ] Create: `src/year1/05_linear_algebra.py`
-- [ ] **Vectors**
-  - [ ] Implement: vector addition & subtraction
-  - [ ] Implement: dot product
-  - [ ] Implement: vector magnitude (norm)
-  - [ ] Implement: unit vectors
-- [ ] **Matrices**
-  - [ ] Implement: matrix addition & subtraction
-  - [ ] Implement: matrix multiplication
-  - [ ] Implement: matrix transpose
-  - [ ] Implement: identity matrix
-- [ ] **NumPy Vectors & Matrices**
-  - [ ] Create: `src/year1/06_numpy_basics.py`
-  - [ ] Implement: NumPy array operations
-  - [ ] Compare: manual vs NumPy (performance)
-  - [ ] Visualize: matrices and transformations
-  - [ ] Benchmark: speed improvements
+- [x] Create: `src/year1/05_linear_algebra.py`
+- [x] **Vectors**
+  - [x] Implement: vector addition & subtraction
+  - [x] Implement: dot product
+  - [x] Implement: vector magnitude (norm)
+  - [x] Implement: unit vectors
+- [x] **Matrices**
+  - [x] Implement: matrix addition & subtraction
+  - [x] Implement: matrix multiplication
+  - [x] Implement: matrix transpose
+  - [x] Implement: identity matrix
+- [x] **NumPy Vectors & Matrices**
+  - [x] Create: `src/year1/06_numpy_basics.py`
+  - [x] Implement: NumPy array operations
+  - [x] Compare: manual vs NumPy (performance)
+  - [x] Visualize: matrices and transformations
+  - [x] Benchmark: speed improvements
 
 ### Calculus Fundamentals
-- [ ] Create: `src/year1/07_calculus_basics.py`
-- [ ] **Derivatives**
-  - [ ] Understand: derivative concept (rate of change)
-  - [ ] Implement: numerical derivatives (finite difference)
-  - [ ] Implement: partial derivatives
-  - [ ] Visualize: derivatives with matplotlib
-- [ ] **Gradient Descent** (foundational)
-  - [ ] Implement: basic gradient descent
-  - [ ] Implement: learning rate adjustment
-  - [ ] Visualize: convergence behavior
-  - [ ] Test: on simple 2D function
+- [x] Create: `src/year1/07_calculus_basics.py`
+- [x] **Derivatives**
+  - [x] Understand: derivative concept (rate of change)
+  - [x] Implement: numerical derivatives (finite difference)
+  - [x] Implement: partial derivatives
+  - [x] Visualize: derivatives with matplotlib
+- [x] **Gradient Descent** (foundational)
+  - [x] Implement: basic gradient descent
+  - [x] Implement: learning rate adjustment
+  - [x] Visualize: convergence behavior
+  - [x] Test: on simple 2D function
 
 ### Visualization
-- [ ] Create comprehensive visualizations:
-  - [ ] Vector operations (arrows)
-  - [ ] Matrix transformations
-  - [ ] Function derivatives
-  - [ ] Gradient descent convergence
-- [ ] Save all visualizations: `docs/visualizations/`
+- [x] Create comprehensive visualizations:
+  - [x] Vector operations (arrows)
+  - [x] Matrix transformations
+  - [x] Function derivatives
+  - [x] Gradient descent convergence
+- [x] Save all visualizations: `docs/visualizations/`
 
 ### Validation
-- [ ] All math functions tested
-- [ ] Numerical accuracy verified
-- [ ] Visualizations clear and informative
+- [x] All math functions tested
+- [x] Numerical accuracy verified
+- [x] Visualizations clear and informative
 - [ ] Write: `docs/MATH_NOTES.md` explaining concepts
-- [ ] Commit: `git commit -m "[Year1] Complete mathematical foundations"`
+- [x] Commit: `git commit -m "[Year1] Complete mathematical foundations"`
 
 ## ✅ Phase 1.3: Neural Networks From Scratch (Weeks 17-40)
 
 ### Single Neuron Implementation
-- [ ] Create: `src/year1/neural_network/neuron.py`
-- [ ] **Neuron Architecture**
-  - [ ] Implement: `Neuron` class
-  - [ ] Formula: `output = sum(input[i] * weight[i]) + bias`
-  - [ ] Implement: forward pass
-  - [ ] Initialize: random weights & bias
-- [ ] **Manual Test**
-  - [ ] Create test cases with known inputs
-  - [ ] Verify: output calculation
-  - [ ] Test: weight/bias updates
+- [x] Create: `src/year1/neural_network/neuron.py`
+- [x] **Neuron Architecture**
+  - [x] Implement: `Neuron` class
+  - [x] Formula: `output = sum(input[i] * weight[i]) + bias`
+  - [x] Implement: forward pass
+  - [x] Initialize: random weights & bias
+- [x] **Manual Test**
+  - [x] Create test cases with known inputs
+  - [x] Verify: output calculation
+  - [x] Test: weight/bias updates
 
 ### Activation Functions
-- [ ] Create: `src/year1/neural_network/activations.py`
-- [ ] **ReLU (Rectified Linear Unit)**
-  - [ ] Implement: `relu(x) = max(0, x)`
-  - [ ] Implement: derivative for backprop
-  - [ ] Visualize: ReLU function
-- [ ] **Sigmoid**
-  - [ ] Implement: `sigmoid(x) = 1 / (1 + e^-x)`
-  - [ ] Implement: derivative
-  - [ ] Visualize: Sigmoid curve
-- [ ] **Tanh**
-  - [ ] Implement: `tanh(x)`
-  - [ ] Implement: derivative
-  - [ ] Visualize: all 3 functions side-by-side
-- [ ] **Softmax** (for classifications)
-  - [ ] Implement: softmax activation
-  - [ ] Test: probability distributions
+- [x] Create: `src/year1/neural_network/activations.py`
+- [x] **ReLU (Rectified Linear Unit)**
+  - [x] Implement: `relu(x) = max(0, x)`
+  - [x] Implement: derivative for backprop
+  - [x] Visualize: ReLU function
+- [x] **Sigmoid**
+  - [x] Implement: `sigmoid(x) = 1 / (1 + e^-x)`
+  - [x] Implement: derivative
+  - [x] Visualize: Sigmoid curve
+- [x] **Tanh**
+  - [x] Implement: `tanh(x)`
+  - [x] Implement: derivative
+  - [x] Visualize: all 3 functions side-by-side
+- [x] **Softmax** (for classifications)
+  - [x] Implement: softmax activation
+  - [x] Test: probability distributions
 
 ### Layers
-- [ ] Create: `src/year1/neural_network/layers.py`
-- [ ] **Dense Layer**
-  - [ ] Implement: `DenseLayer` class
-  - [ ] Initialize: weight matrix & bias vector
-  - [ ] Implement: forward pass (matrix operations)
-  - [ ] Test: with multiple neurons
-- [ ] **Layer Composition**
-  - [ ] Test: stacking 2-3 layers
-  - [ ] Verify: dimensions propagate correctly
+- [x] Create: `src/year1/neural_network/layers.py`
+- [x] **Dense Layer**
+  - [x] Implement: `DenseLayer` class
+  - [x] Initialize: weight matrix & bias vector
+  - [x] Implement: forward pass (matrix operations)
+  - [x] Test: with multiple neurons
+- [x] **Layer Composition**
+  - [x] Test: stacking 2-3 layers
+  - [x] Verify: dimensions propagate correctly
 
 ### Loss Functions
-- [ ] Create: `src/year1/neural_network/loss.py`
-- [ ] **Mean Squared Error (MSE)**
-  - [ ] Implement: MSE for regression
-  - [ ] Implement: MSE derivative
-  - [ ] Visualize: loss surface
-- [ ] **Cross-Entropy Loss**
-  - [ ] Implement: for classification
-  - [ ] Implement: derivative
-  - [ ] Test: with softmax output
+- [x] Create: `src/year1/neural_network/loss.py`
+- [x] **Mean Squared Error (MSE)**
+  - [x] Implement: MSE for regression
+  - [x] Implement: MSE derivative
+  - [x] Visualize: loss surface
+- [x] **Cross-Entropy Loss**
+  - [x] Implement: for classification
+  - [x] Implement: derivative
+  - [x] Test: with softmax output
 
 ### Backpropagation
-- [ ] Create: `src/year1/neural_network/backprop.py`
-- [ ] **Gradient Computation**
-  - [ ] Understand: chain rule in neural networks
-  - [ ] Implement: compute gradients for each layer
-  - [ ] Implement: gradient flow backward
-- [ ] **Parameter Updates**
-  - [ ] Implement: weight update rule
-  - [ ] Implement: bias update rule
-  - [ ] Implement: learning rate application
-- [ ] **Testing**
-  - [ ] Numerical gradient checking (verify gradients)
-  - [ ] Test: simple 2-layer network training
-  - [ ] Visualize: loss decreasing over epochs
+- [x] Create: `src/year1/neural_network/backprop.py`
+- [x] **Gradient Computation**
+  - [x] Understand: chain rule in neural networks
+  - [x] Implement: compute gradients for each layer
+  - [x] Implement: gradient flow backward
+- [x] **Parameter Updates**
+  - [x] Implement: weight update rule
+  - [x] Implement: bias update rule
+  - [x] Implement: learning rate application
+- [x] **Testing**
+  - [x] Numerical gradient checking (verify gradients)
+  - [x] Test: simple 2-layer network training
+  - [x] Visualize: loss decreasing over epochs
 
 ### Complete Neural Network Class
-- [ ] Create: `src/year1/neural_network/network.py`
-- [ ] **Network Architecture**
-  - [ ] Implement: `NeuralNetwork` class
-  - [ ] Support: variable number of layers
-  - [ ] Implement: forward pass (compose layers)
-- [ ] **Training**
-  - [ ] Implement: `train()` method
-  - [ ] Implement: epoch loop
-  - [ ] Implement: batch processing
-  - [ ] Track: loss over time
-- [ ] **Testing**
-  - [ ] Create: synthetic dataset (XOR problem)
-  - [ ] Train: simple 2-layer network
-  - [ ] Verify: network learns XOR
-  - [ ] Visualize: decision boundary
+- [x] Create: `src/year1/neural_network/network.py`
+- [x] **Network Architecture**
+  - [x] Implement: `NeuralNetwork` class
+  - [x] Support: variable number of layers
+  - [x] Implement: forward pass (compose layers)
+- [x] **Training**
+  - [x] Implement: `train()` method
+  - [x] Implement: epoch loop
+  - [x] Implement: batch processing
+  - [x] Track: loss over time
+- [x] **Testing**
+  - [x] Create: synthetic dataset (XOR problem)
+  - [x] Train: simple 2-layer network
+  - [x] Verify: network learns XOR
+  - [x] Visualize: decision boundary
 
 ### Documentation & Validation
 - [ ] Write: `docs/NEURAL_NETWORK.md`
-  - [ ] Explain each component
-  - [ ] Mathematical formulas
-  - [ ] Gradient derivations
 - [ ] Create: `notebooks/experiments/nn_from_scratch.ipynb`
-  - [ ] Interactive demonstrations
-  - [ ] 5+ experiments with visualizations
 - [ ] All tests pass: `pytest tests/year1/neural_network/ -v`
-- [ ] Commit: `git commit -m "[Year1] Complete neural network from scratch"`
+- [x] Commit: `git commit -m "[Year1] Complete neural network from scratch"`
 
 ## ✅ Phase 1.4: NumPy Optimization (Weeks 41-48)
 
 ### Performance Analysis
-- [ ] Create: `src/year1/optimization/performance.py`
-- [ ] Compare: manual loops vs NumPy
-  - [ ] Matrix multiplication (1000x1000)
-  - [ ] Activation functions (100,000 elements)
-  - [ ] Measure: speedup factor
-- [ ] Profile: identify bottlenecks
-  - [ ] Use `cProfile` to profile code
-  - [ ] Document: timing results
+- [x] Create: `src/year1/optimization/performance.py`
+- [x] Compare: manual loops vs NumPy
+  - [x] Matrix multiplication (1000x1000)
+  - [x] Activation functions (100,000 elements)
+  - [x] Measure: speedup factor
+- [x] Profile: identify bottlenecks
+  - [x] Use `cProfile` to profile code
+  - [x] Document: timing results
 
 ### Vectorization Refactoring
-- [ ] Refactor: `neural_network/` to use NumPy extensively
-- [ ] Update: `layers.py` with vectorized operations
-- [ ] Update: `backprop.py` with matrix operations
-- [ ] Update: `network.py` for batch processing
-- [ ] Benchmark: compare original vs optimized
-  - [ ] Training time on XOR (check speedup)
-  - [ ] Memory usage improvement
+- [x] Refactor: `neural_network/` to use NumPy extensively
+- [x] Update: `layers.py` with vectorized operations
+- [x] Update: `backprop.py` with matrix operations
+- [x] Update: `network.py` for batch processing
+- [x] Benchmark: compare original vs optimized
+  - [x] Training time on XOR (check speedup)
+  - [x] Memory usage improvement
 
 ### Batch Processing
-- [ ] Implement: batch gradient descent
-- [ ] Test: different batch sizes
-- [ ] Visualize: convergence with different batch sizes
+- [x] Implement: batch gradient descent
+- [x] Test: different batch sizes
+- [x] Visualize: convergence with different batch sizes
 
 ### Testing & Documentation
-- [ ] All tests still pass with optimized code
+- [x] All tests still pass with optimized code
 - [ ] Write: `docs/OPTIMIZATION.md`
-  - [ ] Performance comparisons
-  - [ ] Benchmarking results
-  - [ ] Vectorization techniques used
-- [ ] Commit: `git commit -m "[Year1] NumPy optimization complete"`
+- [x] Commit: `git commit -m "[Year1] NumPy optimization complete"`
 
 ## ✅ Phase 1.5: Early Chat Interface (Weeks 45-52)
 
 ### Simple Terminal Chat
-- [ ] Create: `src/year1/chat/simple_chat.py`
-- [ ] **Basic Functionality**
-  - [ ] Accept user input
-  - [ ] Pattern matching (if/elif responses)
-  - [ ] Pre-defined responses dictionary
-  - [ ] Example responses:
-    ```
-    "hello" → "Hi! How can I help?"
-    "how are you" → "I'm doing great!"
-    "goodbye" → "See you later!"
-    ```
-- [ ] Test: 10+ input/output pairs
+- [x] Create: `src/year1/chat/simple_chat.py`
+- [x] **Basic Functionality**
+  - [x] Accept user input
+  - [x] Pattern matching (if/elif responses)
+  - [x] Pre-defined responses dictionary
+- [x] Test: 10+ input/output pairs
 
 ### Neural Network Integration (Preview)
-- [ ] Create: `src/year1/chat/nn_chat.py`
-- [ ] **Simple Prediction Chat**
-  - [ ] Load trained XOR network from Phase 1.3
-  - [ ] Take user input (two numbers)
-  - [ ] Pass through network
-  - [ ] Return prediction
-  - [ ] This is just a demo of NN → UI
-- [ ] Purpose:
-  - [ ] Test interaction early
-  - [ ] Build debugging habits
-  - [ ] See NN output in real-time
+- [x] Create: `src/year1/chat/nn_chat.py`
+- [x] **Simple Prediction Chat**
+  - [x] Load trained XOR network from Phase 1.3
+  - [x] Take user input (two numbers)
+  - [x] Pass through network
+  - [x] Return prediction
 
 ### Chat History & Logging
-- [ ] Implement: save conversations to file
-  - [ ] Format: JSON logs
-  - [ ] Location: `data/chat_logs/`
-- [ ] Implement: load & display history
-- [ ] Create: `src/year1/chat/logger.py`
+- [x] Implement: save conversations to file
+  - [x] Format: JSON logs
+  - [x] Location: `data/chat_logs/`
+- [x] Implement: load & display history
+- [x] Create: `src/year1/chat/logger.py`
 
 ### User Experience Basics
-- [ ] Add: clear prompts
-- [ ] Add: helpful error messages
-- [ ] Add: quit command
-- [ ] Add: help/menu option
-- [ ] Test: 5+ user scenarios
+- [x] Add: clear prompts
+- [x] Add: helpful error messages
+- [x] Add: quit command
+- [x] Add: help/menu option
+- [x] Test: 5+ user scenarios
 
 ### Testing & Validation
-- [ ] Write: unit tests for chat logic
-- [ ] Write: integration tests with NN
+- [x] Write: unit tests for chat logic
+- [x] Write: integration tests with NN
 - [ ] Document: `docs/CHAT_UI.md`
-  - [ ] How to run
-  - [ ] Example interactions
 - [ ] Create: demonstration notebook
-- [ ] Commit: `git commit -m "[Year1] Early chat interface implemented"`
+- [x] Commit: `git commit -m "[Year1] Early chat interface implemented"`
 
 ### Year 1 Milestone Check
-- [ ] All Year 1 tests pass
-- [ ] NN successfully trained on XOR
-- [ ] Chat interface functional
-- [ ] All code committed to git
-- [ ] Write: `YEAR1_SUMMARY.md` with:
-  - [ ] What learned
-  - [ ] Challenges faced
-  - [ ] Key insights
-  - [ ] Code statistics (lines written, functions, classes)
+- [x] All Year 1 tests pass
+- [x] NN successfully trained on XOR
+- [x] Chat interface functional
+- [x] All code committed to git
+- [ ] Write: `YEAR1_SUMMARY.md`
 
 ---
 
