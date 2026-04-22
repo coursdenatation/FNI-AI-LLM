@@ -482,12 +482,15 @@ Build a production-ready language model from scratch with continuous testing thr
 - [ ] Visualize: frequency distribution (histogram)
 - [ ] Generate: statistics report
 
-### African Language Vocabulary
-- [ ] Create: `data/african_languages/vocab_guide.md`
-- [ ] Research: common African languages
-  - [ ] Swahili, Yoruba, Amharic, Hausa, etc.
-  - [ ] Linguistic characteristics
-- [ ] Create: starter vocabulary for 2+ languages
+### Cameroon Language Vocabulary
+- [ ] Create: `data/cameroon_languages/vocab_guide.md`
+- [ ] Languages (in order of implementation):
+  - [ ] English (Cameroon English)
+  - [ ] French (Cameroon French)
+  - [ ] Bayangi
+  - [ ] Douala (Duala)
+  - [ ] Other Cameroon languages (Bamileke, Fulfulde, Ewondo, etc.)
+- [ ] Create: starter vocabulary for each language
   - [ ] Basic words (greetings, common nouns)
   - [ ] 100 words minimum per language
 
@@ -753,67 +756,53 @@ Build a production-ready language model from scratch with continuous testing thr
 
 ---
 
-# 🌍 YEAR 3: DATA & AFRICAN LANGUAGES (52 WEEKS)
+## YEAR 3: DATA & CAMEROON LANGUAGES (52 WEEKS)
+
+Language implementation order:
+1. English (Cameroon English)
+2. French (Cameroon French)
+3. Bayangi
+4. Douala (Duala)
+5. Other Cameroon languages (Bamileke, Fulfulde, Ewondo, etc.)
 
 ## ✅ Phase 3.1: Data Collection (Weeks 1-12)
 
-### African Language Resources
-- [ ] Create: `data/african_languages/README.md`
+### Cameroon Language Resources
+- [ ] Create: `data/cameroon_languages/README.md`
   - [ ] Document data sources
   - [ ] Language selection rationale
   - [ ] License information (ensure open use)
 - [ ] Research: available datasets
-  - [ ] [ ] Google African Languages Project
-  - [ ] [ ] OSCAR (multilingual corpus)
-  - [ ] [ ] Wikipedia dumps in African languages
-  - [ ] [ ] Project Gutenberg (translations)
-  - [ ] [ ] OpenWeather, OpenNews (translated resources)
+  - [ ] English Cameroon corpus
+  - [ ] French Cameroon corpus
+  - [ ] Bayangi linguistic resources
+  - [ ] Douala linguistic resources
+  - [ ] Other Cameroon language resources
 
-### Swahili Data
-- [ ] Create: `data/african_languages/swahili/`
+### English Data (Cameroon English)
+- [ ] Create: `data/cameroon_languages/english/`
 - [ ] Collect: 10,000+ sentences minimum
-  - [ ] [ ] Download corpus (Wikipedia, news, books)
-  - [ ] [ ] Legal/open license verified
-  - [ ] [ ] Save: `raw/swahili_corpus.txt`
-- [ ] Additional sources:
-  - [ ] Parallel corpora (Swahili-English)
-  - [ ] Sentence collections
-  - [ ] Common phrases & idioms
+  - [ ] Download corpus (news, books, conversations)
+  - [ ] Save: `raw/english_corpus.txt`
 
-### Yoruba Data
-- [ ] Create: `data/african_languages/yoruba/`
+### French Data (Cameroon French)
+- [ ] Create: `data/cameroon_languages/french/`
 - [ ] Collect: 10,000+ sentences
-  - [ ] [ ] Linguistic resources
-  - [ ] [ ] Cultural texts (if available)
-  - [ ] [ ] Save: `raw/yoruba_corpus.txt`
+  - [ ] Save: `raw/french_corpus.txt`
 
-### One More African Language (Choice)
-- [ ] Options: Amharic, Hausa, Igbo, Somali, Tigrinya
-- [ ] Create: `data/african_languages/{language}/`
-- [ ] Collect: 10,000+ sentences
-  - [ ] [ ] Download & verify license
-  - [ ] [ ] Save: `raw/{language}_corpus.txt`
+### Bayangi Data
+- [ ] Create: `data/cameroon_languages/bayangi/`
+- [ ] Collect: available text data
+  - [ ] Save: `raw/bayangi_corpus.txt`
 
-### Local Data Collection (Optional)
-- [ ] Record: simple sentences from native speakers (if possible)
-  - [ ] Get permission
-  - [ ] Document: speaker info (for attribution)
-  - [ ] Save: `raw/recorded_phrases/`
+### Douala Data
+- [ ] Create: `data/cameroon_languages/douala/`
+- [ ] Collect: available text data
+  - [ ] Save: `raw/douala_corpus.txt`
 
-### Data Organization
-- [ ] Create: `data/african_languages/sources.json`
-  ```json
-  {
-    "language": "swahili",
-    "sources": [
-      {"name": "Wikipedia", "url": "...", "license": "CC-BY-SA"},
-      {"name": "OSCAR", "url": "...", "license": "CC0"}
-    ],
-    "sentence_count": 15000,
-    "date_collected": "2026-04-17"
-  }
-  ```
-- [ ] Commit: `git commit -m "[Year3] African language data collected"`
+### Other Cameroon Languages
+- [ ] Options: Bamileke, Fulfulde, Ewondo, Bassa, etc.
+- [ ] Create: `data/cameroon_languages/{language}/`
 
 ## ✅ Phase 3.2: Data Cleaning & Preprocessing (Weeks 13-24)
 
