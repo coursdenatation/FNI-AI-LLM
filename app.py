@@ -18,13 +18,14 @@ st.set_page_config(
 
 # --- HEADER ---
 st.title("🇨🇲 FNI-LLM — Cameroon Language AI")
-st.caption("Built from scratch | Year 1 + Year 2 Preview")
+st.caption("Built from scratch | Year 1 + Year 2 + Year 3 Preview")
 
 # --- SIDEBAR ---
 with st.sidebar:
     st.image("https://flagcdn.com/w80/cm.png", width=60)
     st.markdown("### Navigation")
     mode = st.radio("Select Mode", [
+        "Trained Model (Year 3)",
         "Transformer Chat (Year 2)",
         "XOR Neural Network (Year 1)",
         "Simple Pattern Chat (Year 1)",
@@ -51,9 +52,113 @@ with st.sidebar:
 
 
 # ============================================================
-# MODE 1: TRANSFORMER CHAT
+# MODE 0: TRAINED MODEL (YEAR 3)
 # ============================================================
-if mode == "Transformer Chat (Year 2)":
+if mode == "Trained Model (Year 3)":
+    st.subheader("Trained English Model (Year 3)")
+
+    @st.cache_resource
+    def load_year3_model():
+        import sys
+        sys.path.insert(0, '.')
+        from src.year3.model_loader import load_trained_model
+        return load_trained_model(language='english', device='cpu')
+
+    model, w2i, i2w, config = load_year3_model()
+
+    if model is None:
+        st.warning(
+            "Trained model not found locally. "
+            "Complete these steps first:\n\n"
+            "1. Run tomorrow's Colab training\n"
+            "2. In Colab Cell 3, also run:\n"
+            "   `!git add models/checkpoints/english_best.pt`\n"
+            "   `!git add models/english/tokenizer.json`\n"
+            "   `!git commit -m 'Add trained model'`\n"
+            "   `!git push origin master`\n"
+            "3. Locally run: `git pull origin master`\n"
+            "4. Restart this app"
+        )
+        st.info(
+            "While waiting, use **Transformer Chat (Year 2)** "
+            "to test the untrained architecture."
+        )
+    else:
+        st.success(
+            f"Trained model loaded! "
+            f"Vocab: {config['vocab_size']:,} | "
+            f"Params: {sum(p.numel() for p in model.parameters()):,}"
+        )
+
+        from src.year3.model_loader import generate_text
+
+        col1, col2 = st.columns(2)
+        with col1:
+            temperature = st.slider(
+                "Temperature", 0.1, 2.0, 0.8, 0.1,
+                help="Lower=focused, Higher=creative")
+        with col2:
+            max_tokens = st.slider("Max new tokens", 5, 50, 20)
+
+        top_k = st.slider("Top-k", 5, 100, 40,
+                          help="Number of top tokens to sample from")
+
+        if "y3_messages" not in st.session_state:
+            st.session_state.y3_messages = []
+
+        if st.button("Clear Chat", key="clear_y3"):
+            st.session_state.y3_messages = []
+            st.rerun()
+
+        # Show example prompts
+        st.markdown("**Try these prompts:**")
+        examples = [
+            "cameroon is a country in central africa",
+            "the people of cameroon speak",
+            "douala is the largest city",
+            "the official languages of cameroon are",
+        ]
+        cols = st.columns(2)
+        for i, ex in enumerate(examples):
+            if cols[i % 2].button(ex, key=f"ex_{i}"):
+                st.session_state.y3_input = ex
+
+        for msg in st.session_state.y3_messages:
+            with st.chat_message(msg["role"]):
+                st.write(msg["content"])
+
+        prompt = st.chat_input(
+            "Type a prompt — trained model will continue it...",
+            key="y3_input")
+
+        if prompt:
+            st.session_state.y3_messages.append(
+                {"role": "user", "content": prompt})
+            with st.chat_message("user"):
+                st.write(prompt)
+
+            with st.spinner("Generating..."):
+                output = generate_text(
+                    model, w2i, i2w, prompt,
+                    max_new=max_tokens,
+                    temp=temperature,
+                    top_k=top_k,
+                    seq_len=config['max_seq_len']
+                )
+
+            st.session_state.y3_messages.append(
+                {"role": "assistant", "content": output})
+            with st.chat_message("assistant"):
+                st.write(output)
+                st.caption(
+                    f"temp={temperature} | top_k={top_k} | "
+                    f"tokens={max_tokens} | trained on 1M sentences")
+
+
+# ============================================================
+# MODE 1: TRANSFORMER CHAT (YEAR 2)
+# ============================================================
+elif mode == "Transformer Chat (Year 2)":
     st.subheader("Transformer Chat")
     st.info(
         "The Transformer has the correct architecture but **random weights** — "
