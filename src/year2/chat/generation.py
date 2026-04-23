@@ -14,14 +14,20 @@ def softmax(x, temperature=1.0):
 
 
 def greedy_decode(engine, prompt, max_new_tokens=10):
-    """Always pick the most probable next token"""
+    """Always pick the most probable next token, with repetition penalty"""
     ids = engine.encode(prompt)
+    seen = {}
     for _ in range(max_new_tokens):
         token_ids = np.array([ids])
-        logits = engine.model.forward(token_ids)
-        next_id = int(logits[0, -1].argmax())
+        logits = engine.model.forward(token_ids)[0, -1].copy()
+
+        # Repetition penalty — reduce score of already seen tokens
+        for token_id, count in seen.items():
+            logits[token_id] -= 2.0 * count
+
+        next_id = int(logits.argmax())
+        seen[next_id] = seen.get(next_id, 0) + 1
         ids.append(next_id)
-        # Stop at END token
         if next_id == engine.vocab.word_to_id.get(engine.vocab.END, -1):
             break
     return engine.decode(ids)
@@ -29,16 +35,23 @@ def greedy_decode(engine, prompt, max_new_tokens=10):
 
 def temperature_sample(engine, prompt, max_new_tokens=10, temperature=1.0):
     """
-    Sample next token from probability distribution.
-    temperature < 1.0 = more confident/repetitive
-    temperature > 1.0 = more random/creative
+    Sample next token from probability distribution with repetition penalty.
+    temperature < 1.0 = more confident
+    temperature > 1.0 = more creative
     """
     ids = engine.encode(prompt)
+    seen = {}
     for _ in range(max_new_tokens):
         token_ids = np.array([ids])
-        logits = engine.model.forward(token_ids)
-        probs = softmax(logits[0, -1], temperature=temperature)
+        logits = engine.model.forward(token_ids)[0, -1].copy()
+
+        # Repetition penalty
+        for token_id, count in seen.items():
+            logits[token_id] -= 2.0 * count
+
+        probs = softmax(logits, temperature=temperature)
         next_id = int(np.random.choice(len(probs), p=probs))
+        seen[next_id] = seen.get(next_id, 0) + 1
         ids.append(next_id)
         if next_id == engine.vocab.word_to_id.get(engine.vocab.END, -1):
             break
