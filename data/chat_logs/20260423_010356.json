@@ -1,0 +1,37 @@
+{
+  "model": "transformer-v0",
+  "language": "english",
+  "created_at": "2026-04-23 01:03:56.260649",
+  "messages": [
+    {
+      "role": "user",
+      "text": "hello how are you",
+      "timestamp": "2026-04-23 01:03:56.262533"
+    },
+    {
+      "role": "bot",
+      "text": "i scratch i scratch i i i i",
+      "timestamp": "2026-04-23 01:03:56.262673"
+    },
+    {
+      "role": "user",
+      "text": "hello cameroon",
+      "timestamp": "2026-04-23 01:03:56.264264"
+    },
+    {
+      "role": "bot",
+      "text": "fine scratch hello learn is i i i",
+      "timestamp": "2026-04-23 01:03:56.264264"
+    },
+    {
+      "role": "user",
+      "text": "bye",
+      "timestamp": "2026-04-23 01:03:56.264264"
+    },
+    {
+      "role": "bot",
+      "text": "Goodbye! Keep building.",
+      "timestamp": "2026-04-23 01:03:56.264264"
+    }
+  ]
+}
