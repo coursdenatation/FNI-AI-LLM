@@ -1,7 +1,7 @@
 {
   "language": "english",
-  "sentence_count": 40,
-  "date_processed": "2026-04-23 01:43:45.072913",
+  "sentence_count": 3274,
+  "date_processed": "2026-04-23 02:02:59.243991",
   "steps": [
     "clean",
     "deduplicate",

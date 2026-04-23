@@ -1,7 +1,7 @@
 {
   "language": "bayangi",
   "sentence_count": 20,
-  "date_processed": "2026-04-23 01:43:45.086016",
+  "date_processed": "2026-04-23 02:02:59.305949",
   "steps": [
     "clean",
     "deduplicate",
